@@ -1,0 +1,12 @@
+from tkinter import *
+root=Tk()
+root.geometry("400x300")
+root.title('Shapes')
+c=Canvas(root,bg="light pink",height=300,width=500)
+c.create_rectangle(150,50, 350, 250, width=4,outline='#FFFF00')
+c.create_oval(150, 50, 350, 250,fill='#00FF7F',width='4',outline='#0000CD')
+c.create_line(150, 145, 352, 145,width=4,fill='#FFFFFF')
+c.create_line(250, 50, 250, 250,width=4,fill='#FFFFFF')
+c.create_oval(200, 100, 300, 200,width=4,fill='#006400',outline='#FF0000')
+c.pack()
+root.mainloop()
